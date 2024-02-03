@@ -1,7 +1,12 @@
 // Wait for the DOM content to be fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", () =>
 {
- 
+  const apiKey = '8d6e2fc06c0a0c5cb22a332ef40117ca';
+  const ts = '1705943419297';
+  const hash = 'b8bc44fe294721ba4c8f922bbed87a1a';
+
+  const apiUrl = `https://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
+
  // Selecting DOM elements
   var searchButton = document.getElementById("btn");
   
@@ -30,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () =>
   searchBox.addEventListener("click", async function fetchData() 
   {
     
-    await fetch(`https://gateway.marvel.com/v1/public/characters?ts=1705943419297&apikey=8d6e2fc06c0a0c5cb22a332ef40117ca&hash=b8bc44fe294721ba4c8f922bbed87a1a`)
+    await fetch(apiUrl)
       
       .then((responseData) =>
        {
@@ -115,9 +120,7 @@ document.addEventListener("DOMContentLoaded", () =>
   async function fetchInfo(searchText) 
   {
 
-    await fetch(
-      `https://gateway.marvel.com/v1/public/characters?ts=1705943419297&apikey=8d6e2fc06c0a0c5cb22a332ef40117ca&hash=b8bc44fe294721ba4c8f922bbed87a1a`
-    )
+    await fetch(apiUrl)
       .then((res) => 
     {
             return res.json();
