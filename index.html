@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title of the document -->
+    <title>SuperHero Hunter</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Search Suggestions Section -->
+      <div id="searchSuggestions">
+        <!-- Search Form -->
+        <form class="search-container">
+          <!-- Favorite Button with Heart Emoji -->
+          <button id="add-fav">
+            <a href="fav.html" target="_self" style="text-decoration: none"
+              >&#10084;</a
+            >
+          </button>
+          <!-- Search Input -->
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search your favourite superhero?"
+            autocomplete="off"
+          />
+          <!-- Search Button -->
+          <a href="#"><button id="btn" type="button">Search</button></a>
+        </form>
+        <!-- Hero List Section -->
+        <div id="heroList"></div>
+      </div>
+      <!-- Main Display Section -->
+      <div class="main">
+        <!-- Superhero Image -->
+        <img src="" alt="" id="photo" />
+        <!-- Superhero Name -->
+        <div class="name"></div>
+        <!-- Superhero Description -->
+        <div class="description"></div>
+        <!-- Add to Favorite and Close Buttons -->
+        <button id="fav-btn">Add to favourite</button>
+        <button id="cancel-btn">Close</button>
+      </div>
+    </div>
+    <!-- JavaScript file inclusion -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

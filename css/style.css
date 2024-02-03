@@ -1,0 +1,172 @@
+/* Resetting default margin, padding, and box-sizing */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the background image */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/spider-man-marvel-comics-black-background-superhero-wallpaper-preview.jpg");
+  /* opacity: 0.8; */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main container styling */
+.container {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+/* Search Suggestions Section styling */
+#searchSuggestions {
+  height: 30%;
+}
+
+/* Suggestions List styling */
+#suggestions {
+  height: auto;
+  width: 354px;
+  margin-left: 45px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 6px;
+}
+/* Hero List styling */
+#heroList {
+  height: 100%;
+}
+
+/* Search Container styling */
+.search-container {
+  height: 50px;
+  width: 500px;
+  background-color: rgb(232, 217, 217);
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  gap: -1px;
+}
+/* Search Input styling */
+input#search-bar {
+  width: 400px;
+  height: 50px;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px;
+  opacity: 3;
+}
+
+/* Favorite Button styling */
+#add-fav {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#btn {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  color: black;
+  font-weight: 900;
+}
+
+/* Main Display Section styling */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70%;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.429);
+  display: none;
+  border-radius: 1rem;
+}
+
+/* Superhero Name styling */
+.name {
+  height: 10%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  padding: 2%;
+  font-weight: 800;
+}
+/* Superhero Image styling */
+#photo {
+  height: 65%;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+/* Superhero Description styling */
+.description {
+  height: 15%;
+  width: 100%;
+  color: black;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 2%;
+  font-weight: 700;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+/* Add to Favorite Button styling */
+#fav-btn {
+  height: 6%;
+  width: 60%;
+  background-color: #4d3635;
+  margin-left: 4.5%;
+  border-radius: 1rem;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2%;
+}
+/* Close Button styling */
+#cancel-btn {
+  height: 6%;
+  width: 30%;
+  background-color: #4d3635;
+  border-radius: 1rem;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+/* Superhero Image styling */
+img {
+  height: 150px;
+  width: 100px;
+  object-fit: contain;
+  padding: 3%;
+}
+
+/* Styling for hyperlinks */
+a {
+  font-size: x-large;
+}
