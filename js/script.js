@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () =>
   var text = ""; // Variable to store search text
 
   //Fetch superhero names from Marvel API on input focus
-  searchBox.addEventListener("input", async function fetchData() 
+  searchBox.addEventListener("keyup", async function fetchData() 
   {
     if (searchBox.value.length > 2)
      {
